@@ -63,7 +63,7 @@ The script `backend/train_all_models.py` trains and compares five regression alg
 - Extra Trees Regressor
 - Gradient Boosting Regressor
 
-The script compares models using five-fold cross-validation on the training set and evaluates the selected pipeline on held-out test data. It saves the selected pipeline and evaluation files in `backend/models/`.
+The script compares models using five-fold cross-validation on the training set and evaluates the selected pipeline on held-out test data. It saves the selected pipeline and evaluation files in `backend/train_all_models.py/`.
 
 **Recorded evaluation:** Linear Regression had the lowest cross-validation MAE (**34.274 attendees**). On the held-out test set, its MAE was **35.211**, compared with **35.443** for the baseline, an improvement of approximately **0.66%**. The test R² was **−0.0024**. This is only a marginal improvement and does not demonstrate useful attendance-prediction performance.
 
@@ -114,6 +114,7 @@ campusspace-ai/
 │   ├── train_all_models.py     # ML comparison and evaluation
 │   ├── requirements.txt
 │   └── render.yaml
+|   |__ train_all_models.py
 └── frontend/
     ├── src/
     ├── .env.example
